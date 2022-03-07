@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 5fr minmax(266px, 1fr);
+    grid-template-rows: minmax(50px, 1fr) 12fr minmax(50px, 1fr);
+    height: 100vh;
+}
+
+.header {
+    background-color: #145369;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: #f8f8f8;
+}
+
+.content {
+    background-color: #d3eaf2;
+}
+
+.book-container {
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px
+}
+
+.book-organizer {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.book-element {
+    font-size: larger;
+    padding: 5px;
+}
+
+.erase-button {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #b6b3b3;
+    background-color: #ff5252;
+    color: #f3f3f3;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.situation-button {
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #b6b3b3;
+    background-color: #83e580;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.card {
+    height: 270px;
+    width: 250px;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    border-left: 7px solid #b6b3b3;
+    border-bottom: 7px solid #b6b3b3;
+}
+
+.sidebar {
+    background-color: #2596be;
+    grid-column: minmax(266px, auto);
+    display: flex;
+    flex-direction: column;
+}
+
+.register {
+    height: auto;
+    width: minmax(230px, auto);
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.icon {
+    height: 120px;
+    width: 120px;
+    align-self: center;
+    margin-top: 50px;
+}
+
+form {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    padding: 10px;
+    align-items: center;
+}
+
+input {
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #b6b3b3;
+    padding: 5px;
+}
+
+.create-btn {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #b6b3b3;
+    background-color: #2596be;
+    color: #f3f3f3;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.side-title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.footer {
+    background-color: #145369;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    font-size: 1.2rem;
+    color: #f8f8f8;
+}
+
+a:visited, a:link {
+    color: white;
+}

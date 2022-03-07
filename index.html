@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="main">
+    <div class="header">
+        <div class="title">Personal Library</div>
+    </div>
+    <div class="content">
+        <div class="book-container">
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="register">
+            <form>
+                <div class="side-title">Add new book 📚</div>
+
+                <label for="author">Author</label>
+                <input id="author" name="author" type="text" required>
+
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" required>
+
+                <label for="pages">Number of Pages</label>
+                <input id="pages" name="pages" type="number" required>
+
+                <br>
+                <label for="read" class="radio-label">
+                    <input id="read" name="hasread" type="radio" value="already-read" checked required>
+                    Already Read
+                </label>
+                <br>
+
+                <label for="not-read" class="radio-label">
+                    <input id="not-read" name="hasread" type="radio" value="not-read" required>
+                    Not Read
+                </label>
+                <br>
+
+                <button class="create-btn">Create</button>
+            </form>
+        </div>
+        <img class="icon" src="images/icon.png">
+    </div>
+    <div class="footer">
+        <div class="top">by <a href="https://github.com/vitmonjo">vitmonjo</a> | <a
+                href="https://www.theodinproject.com/">The Odin Project</a></div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
